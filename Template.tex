@@ -1,0 +1,190 @@
+%----------------------------------------------------------
+%----------------------------------------------------------
+% THIS IS A TEMPLATE FOR MAKING YOUR OWN CV IN LaTex
+% THERE ARE COMENTS WITH THE WORD CHANGE IF YOU WANT A FAST 
+% EXPERIENCE. FEEL FREE TO MODIFY THIS AS YOU WANT
+% IF YOU NEED SOMETHING CONTACT ME OR MAKE A PULL REQUEST
+%----------------------------------------------------------
+%----------------------------------------------------------
+\documentclass[11pt, oneside, a4paper,titlepage]{article}
+
+% usamos el paquete tcolorbox para poder poner un recuadro de color arriba
+% we use the tcolorbox package for the boxes 
+\usepackage[most]{tcolorbox}
+
+% utilizamos geometry para poner los margenes como el Word
+% we use the geometry package for keep the margins like in MS word
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=0.1cm,
+  right=0.1cm,
+  top=0.1cm,
+  bottom=0.1cm,
+}
+
+%usamos hyperref para los links
+% we use hyperref package for the links
+\usepackage{hyperref}
+% we define the color like this using rgb , I recommend 
+% https://htmlcolorcodes.com for knowing wich rgb color is wich
+% defino el color azul
+\definecolor{Lblanco}{RGB}{225, 225, 225}
+% \definecolor{Lazul}{RGB}{25,149,173}
+
+
+%CHANGE
+\title{%Write your name here
+  }
+\date{}
+
+%We start the document
+% empezamos el documento
+\begin{document}
+%--------------------------------------------------------------
+% THIS IS THE START OF THE TOP RECTANGLE
+%--------------------------------------------------------------
+% In here you must define the color of the top box with the images
+%color que define 
+\tcbset{colframe=gray!95!black,colback=black, arc=0mm}
+
+\begin{tcolorbox}
+  \begin{minipage}{4.5cm}
+    %CHANGE
+    %Here you must put your picture
+    \hspace*{-0.3cm}\includegraphics[width=4cm]{./pictures/me.eps}
+  \end{minipage}
+  \begin{minipage}{15cm}
+    \begin{center}
+      %CHANGE
+      %you must put your name in HERE
+      \Huge{\textcolor{white}{YOUR NAME IN HERE}} \\
+      \vspace*{0.5cm}
+      %CHANGE
+      % you must put your profesional activity here
+      \Large{\textcolor{white}{\emph{WHAT YOU DO IN HERE}}} \\ 
+      \vspace*{0.5cm}
+      %CHANGE
+      %you must complete the github with your github, i will leave mine anyways
+      \hspace*{-0.3cm}\href{https://github.com/danifreflow}{\includegraphics[width=1cm]{./pictures/github.eps}}
+      \quad
+      %CHANGE
+      %you must put your linkedIn here 
+      \hspace*{-0.3cm}\href{%link must be here
+        }{\includegraphics[width=1cm]{./pictures/linkedIn.eps}}
+      \quad
+      \hspace*{-0.3cm}\href{mailto:%mail must be here
+      }{\includegraphics[width=1cm]{./pictures/mail.eps}}
+
+    \end{center}
+  \end{minipage}
+\end{tcolorbox}
+%--------------------------------------------------------------
+% THIS IS THE END OF THE TOP RECTANGLE
+%--------------------------------------------------------------
+\tcbset{colframe=white, colback=white,arc=0mm}
+\begin{tcolorbox}
+  %------------------------------------------------------
+  % THIS IS THE START OF THE LEFT RECTANGLE
+  %------------------------------------------------------
+  \begin{minipage}[t]{8cm}
+    \vspace*{-0.5cm}
+    \begin{tcolorbox}[grow to left by=0.6cm,colback=Lblanco,colframe=Lblanco]
+      \section*{Contact}
+      %CHANGE
+      %change Contact data with your own contact data
+      \begin{tabular}{r l}
+        Tel: +34 XXX XXX XXX \\
+        E-Mail: you@youremail.com \\
+      \end{tabular}
+      \section*{Profile}
+        %CHANGE
+        Here you must put some text about YOU!!! 
+      \section*{EXpertise}
+      \begin{itemize}
+        %CHANGE
+        \item{Something you are good at} 
+        \item{Another thing you are good at}
+      \end{itemize}
+      \section*{Soft skills}
+      \begin{itemize}
+        %CHANGE
+        \item{Your first soft skill}
+        \item{Your second soft skill}
+        \item{Your third soft skill}
+        \item{Your forth soft skill}
+      \end{itemize}
+      \section*{Languages}
+      \begin{itemize}
+        %CHANGE
+        \item{\textbf{First Language - native}} 
+        \item{\textbf{Second Language - Your Level}}
+      \end{itemize}
+
+    \end{tcolorbox}
+  \end{minipage}
+  %-------------------------------------------------------------
+  % THIS IS THE END OF THE LEFT RECTANGLE
+  %-------------------------------------------------------------
+  %-------------------------------------------------------------
+  % THIS IS THE START PF THE RIGHT WHITE TEXT
+  %-------------------------------------------------------------
+  \begin{minipage}[t]{11cm}
+     \vspace*{-0.5cm}
+     \begin{tcolorbox}[grow to right by=0.6cm,colback=white,colframe=white]
+      \section*{Education}
+        \begin{itemize}
+        %CHANGE
+        \item{
+            \textbf{Some study} -
+            \emph{20XX-20XX} \\
+             A description of what you did.
+                      }
+        %CHANGE
+        \item{
+            \textbf{Some other study} -
+            \emph{20XX-20XX} \\
+            A description of what you did. 
+          }
+        %CHANGE
+        \item{
+            \textbf{Some other study} -
+            \emph{20XX-20XX} \\
+            A description of what you did . 
+          }
+
+        \end{itemize}
+      \section*{Experience}
+       \begin{itemize}
+        %CHANGE
+        \item{
+            \textbf{JOB 1} -
+            \emph{20XX -20XX} \\
+            \emph{What you did} \\
+            A description of what you did.
+                     }
+        %CHANGE
+        \item{
+            \textbf{JOB 2} -
+            \emph{20XX -20XX} \\
+            \emph{What you did} \\
+            A description of what you did.    
+          }
+        %CHANGE
+         \item{
+            \textbf{JOB 3} -
+            \emph{20XX -20XX} \\
+            \emph{What you did} \\
+            A description of what you did.    
+          }
+
+      \end{itemize}
+     \end{tcolorbox}
+  \end{minipage}
+  %-------------------------------------------------------------
+  % THIS IS THE START PF THE RIGHT WHITE TEXT
+  %-------------------------------------------------------------
+\end{tcolorbox}
+
+
+\end{document}

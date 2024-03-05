@@ -5,6 +5,7 @@ This is a repo for helping to make a CV uysing
 <div id = "header" align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/800px-LaTeX_logo.svg.png?20210414121601" width="100">
 </div>
+
 The file **Template.tex** is the one that must be change then you must export to pdf
 
 ## Step 1

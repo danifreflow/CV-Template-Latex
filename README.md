@@ -1,7 +1,9 @@
 # CV-Template-Latex
 
 ![Example](https://github.com/danifreflow/CV-Template-Latex/blob/main/pictures/example.png)
-This is a repo for helping to make a CV uysing 
+
+This is a repo for helping to make a CV using 
+
 <div id = "header" align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/800px-LaTeX_logo.svg.png?20210414121601" width="100">
 </div>
